@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script to generate test input, ./gen 12 to generate 12*4 bytes
+for i in $(seq $1); do echo -ne "\x48\x49\xDE\xa0"; done
